@@ -3,18 +3,6 @@ package invariant
 import "fmt"
 
 // mode is the assertion level this package will use.
-//
-// It should be equal to "debug" or "release" (if this isn't true, the program will panic at
-// startup).
-//
-// The default value is "debug".
-//
-// When it is equal to "release", debug assertions are skipped.
-//
-// You can change the value of this variable at compile time:
-//
-// 	 	go build -ldflags “-X github.com/puigfp/invariant.mode=release"
-//
 var mode = "debug"
 
 func init() {
